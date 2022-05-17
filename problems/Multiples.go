@@ -1,8 +1,8 @@
-package main
+package problems
 
 import "fmt"
 
-func main() {
+func Multiples(){
 	var sum int
 	for i := 0; i < 1000; i++ {
 		if i%3 == 0 || i%5 == 0 {
@@ -12,3 +12,4 @@ func main() {
 
 	fmt.Print(sum)
 }
+	
