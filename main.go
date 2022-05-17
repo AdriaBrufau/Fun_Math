@@ -1,10 +1,9 @@
 package main
 
-import (
-	"ProjectEuler/problems"
-)
+import "ProjectEuler/problems"
 
-func main(){
+func main() {
 	//problems.Multiples()
-	problems.Palindromes()
+	//problems.Palindromes()
+	problems.SumOfPrimes()
 }
