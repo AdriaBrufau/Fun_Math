@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "random.h"
-#include "utils.h"
+#include "algebra_utils.h"
 
 #define X_CONSOLE_SIZE  100
 #define Y_CONSOLE_SIZE  100
@@ -16,17 +16,9 @@ int main(int argc, char *argv[]){
     size_y = 10;
     float test = 3.0;
     float derivative;
-    test = function(test);
-    derivative = derivative_floats(test, derivation);
-    //CreateCanvas(X_CONSOLE_SIZE, Y_CONSOLE_SIZE);
-    double** arr = Create2DArray(X_SIZE, MAX_SIZE, 0.5);
-    for(int i = 0; i < X_SIZE; i++){
-        printf("[");
-        for(int y = 0; y < MAX_SIZE;y++){
-            printf(", %.6f", arr[i][y]);
-        }
-        printf("]\n");
-    }
+    matrix *mat = createZerosArray(4, 4);
+
+    printArray(mat);
 
     printf("\n");
    
