@@ -23,10 +23,22 @@ void printArray(matrix *mat){
     int col, row;
 
     for(col = 0; col < mat->cols; col++){
-        printf_s("[");
-        for(row = 0; row < mat->rows; row){
-            printf_s(mat->data[col][row]);
+        printf("[");
+        for(row = 0; row < mat->rows; row++){
+            printf("%2.f", mat->data[col][row]);
         }
-        printf_s("]");
+        printf("]\n");
     }
+}
+
+matrix* fillArray(matrix *mat, double data_vals){
+    // we need to copy mat to a new m
+    int col, row;
+    for(col = 0; col < mat->cols; col++){
+        for(row = 0; row < mat->rows; row++){
+            mat->data[col][row] = data_vals;
+        }
+    }
+
+    return mat;
 }

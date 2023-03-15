@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     float test = 3.0;
     float derivative;
     matrix *mat = createZerosArray(4, 4);
-
+    fillArray(mat, 2.2);
     printArray(mat);
 
     printf("\n");
