@@ -8,10 +8,11 @@ typedef struct{
     double **data;
 } matrix;
 
-matrix* createZerosArray(uint32_t cols, uint32_t rows);
+matrix* init_matrix(uint32_t cols, uint32_t rows);
 void printArray(matrix *m);
-matrix* fillArray(matrix *m, double data);
+void fillArray(matrix *m, int32_t data);
 matrix* applyArray(matrix *m);
+matrix* copyMatrix(matrix *m);
 
 
 

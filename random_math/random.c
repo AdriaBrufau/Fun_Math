@@ -15,9 +15,10 @@ int main(int argc, char *argv[]){
     size_x = 5;
     size_y = 10;
     float test = 3.0;
+    double vals[3] = {2.2,3.3,1.1};
     float derivative;
-    matrix *mat = createZerosArray(4, 4);
-    fillArray(mat, 2.2);
+    matrix *mat = init_matrix(4, 4);
+    mat = fillArray(mat, 4);
     printArray(mat);
 
     printf("\n");
