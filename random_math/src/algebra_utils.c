@@ -41,7 +41,7 @@ void printArray(matrix *mat){
     }
 }
 
-void* fillArray(matrix *mat, int32_t data_vals){
+void fillArray(matrix *mat, int32_t data_vals){
     for(int col = 0; col < mat->cols; col++){
         for(int row = 0; row < mat->rows; row++){
             mat->data[col][row] = data_vals;

@@ -1,6 +1,8 @@
+
 #ifndef UTILS_F
 #define UTILS_F
-
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct{
     uint32_t cols;

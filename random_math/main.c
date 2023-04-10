@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
-#include "random.h"
-#include "algebra_utils.h"
+#include "src/algebra_utils.h"
 
 #define X_CONSOLE_SIZE  100
 #define Y_CONSOLE_SIZE  100
@@ -18,7 +17,7 @@ int main(int argc, char *argv[]){
     double vals[3] = {2.2,3.3,1.1};
     float derivative;
     matrix *mat = init_matrix(4, 4);
-    mat = fillArray(mat, 4);
+    fillArray(mat, 4);
     printArray(mat);
 
     printf("\n");
