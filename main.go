@@ -1,11 +1,11 @@
 package main
 
 import (
-	multiples "main/multiples"
-	palindromes "main/palindromes"
+	fibonacci "main/fibonacci_even_in_go"
 )
 
 func main() {
-	multiples.Multiples_go()
-	palindromes.Palindromes_go()
+	//multiples.Multiples_go()
+	//palindromes.Palindromes_go()
+	fibonacci.Fibonacci()
 }
