@@ -2,19 +2,28 @@ package palindromes
 
 import "fmt"
 
-func Palindromes_go() {
-	var x = populate(10)
-
-	fmt.Print(x)
-	//[0 0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 6 7 8 9]
-
-}
-
-func populate(n int) []int {
-	var a = make([]int, n)
-
-	for i := 0; i < n; i++ {
-		a = append(a, i)
+func Palindrome() {
+	v_2 := 999
+	reversed := 0
+	remainder := 0
+	max_pal := 100 * 100
+	for i := v_2; i >= 100; i-- {
+		for j := v_2; j >= 100; j-- {
+			result := j * i
+			MAX := result
+			for result > 0 {
+				remainder = result % 10
+				reversed = reversed*10 + remainder
+				result = result / 10
+			}
+			if MAX == reversed {
+				if max_pal < reversed {
+					max_pal = reversed
+				}
+			}
+			result = 0
+			reversed = 0
+		}
 	}
-	return a
+	fmt.Printf("%v \n", max_pal)
 }
